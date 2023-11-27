@@ -348,13 +348,20 @@ var abcAll = [ [
 "Zoro"
 ]
 ];
-
+const alphabet = ["#", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q","R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 let aAZ = document.getElementById("azfieldsetid");
 let elementToAdd;
 for(let i = 0; i < abcAll[0].length; i++){
     elementArtist = abcAll[0][i];
     elementToAdd = document.createElement("button");
     elementToAdd.innerHTML = elementArtist;
+    elementToAdd.setAttribute("id", alphabet[0] + i);
+    elementToAdd.onclick = function(){
+        soI = elementToAdd.innerHTML;
+        so = soI.replace(/-|\s/g,"");
+        so = so.toLowerCase()
+        window.location = so + '.html'
+    }
     aAZ.appendChild(elementToAdd)
 }
 function azlyricsi(){
@@ -369,13 +376,19 @@ function azlyricsi(){
                 elementArtist = display[i];
                 let elementToAdd2 = document.createElement("button");
                 elementToAdd2.innerHTML = elementArtist;
+                elementToAdd2.setAttribute("id", alphabet[j] + i);
+                elementToAdd2.onclick = function(){
+                    soI = elementToAdd2.innerHTML;
+                    so = soI.replace(/-|\s/g,"");
+                    so = so.toLowerCase()
+                    window.location = so + '.html'
+                }
                 aAZ.appendChild(elementToAdd2)
              }
-        }
-        
+        }  
      }
-     
 }
+
 let t = setInterval(body, 100)
 let hlyrics = document.getElementById("hlyrics");
 let headerul = document.getElementById("headerul");
@@ -390,7 +403,7 @@ hlyrics.onclick = function(){
 }
 let alphabeto; 
 let select = document.getElementById("selectAlphabet");
-let alphabet = ["N", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q","R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+
 for (let j = 0; j < alphabet.length; j += 1) {
     let un = alphabet[j];
     alphabeti = "alphabet" + un;
