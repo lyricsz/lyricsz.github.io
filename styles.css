@@ -1,91 +1,192 @@
-*{
-    box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: light;
-    text-shadow: 0px 0px 2px white;
-    padding: 0;
-    margin: 0;
-}
-
- body{
-    overflow-x: hidden;
-    background: gainsboro;
- }
-
- h1, h2, h3, h4 {
-    padding: 10px;
-    margin: 0;
-    text-align: center;
-    background: linear-gradient(rgba(240, 248, 255, 0.4), aliceblue, rgba(240, 248, 255, 0.4));
-    margin: 10px 0;
- }
-
-h1{
+* {
+   image-rendering: pixelated;
+   image-rendering: crisp-edges;
+   box-sizing: border-box;
    margin: 0;
-   background: transparent;
+   padding: 0;
 }
 
-header, main{
-   border-bottom: 4px ridge silver;
-}
+body {
+   font-family: "Comic Sans MS", sans-serif;
+   background-color: rgba(238, 238, 238, 0.5);
 
-header ul {
-   display: inline-block;
-   width: 100%;
-   text-align: center;
-   margin-bottom: 8px;
-}
 
-header ul li{
-   display: inline-block;
-   width: 16%;
-   padding: 3px;
-   border: 1px ridge aliceblue;
-   box-shadow: 1px 1px 4px white;
-}
-
-p{
-    text-indent: 20px;
+   overflow-x: hidden;
+   overflow-y: visible;
 }
 
 ul, ol{
-   margin-left: 10px;
+   margin-top: 8px;
+   margin-bottom: 8px;
 }
 
-main ul{
-   list-style-position: inside;
-   list-style-type: disc;
-   width: 100vw;
+main ul, main ol{
+   color: brown;
+   margin-left: 4px;
 }
 
-li::marker{
+h1, h2, h3{
+   padding: 4px;
+   color: brown;
+   text-align: center;
+   box-shadow: 0px 1px 4px gainsboro;
+}
+
+header nav ul, footer nav ul{
+   list-style: none;
+   text-align: center;
+   width: 100%;
+   color: gray;
+}
+
+header nav ul li, footer nav ul li{
+   width: 20%;
+   display: inline-block;
+   padding: 4px;
+   border-bottom: 1px solid navajowhite;
+   color: gray;
+   border-radius: 0px 2px 2px 16px;
+}
+
+h2{
+   font-size: xx-large;
+   border-bottom: 2px inset white;
+   cursor: not-allowed;
+}
+h2, h3{
+   background: linear-gradient(rgba(128, 128, 128, 0.5), rgba(128, 128, 128, 0.8), rgba(128, 128, 128, 0.5));
+}
+
+
+p {
+   font-family: monospace;
+   color: black;
+   word-spacing: 6px;
+   font-weight: 900;
+   text-indent: 40px;
+   font-size: x-large;
+   text-align: justify;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+a, a:active, a:hover, a:hover {
+   text-decoration: none;
    color: brown;
 }
 
-.link{
+a:hover{
+   color: rgba(165, 42, 42, 0.2);
+}
+
+h3{
+   max-width: 60%;
+   margin: 6px auto;
+}
+
+p a{
+   color: inherit;
+}
+
+.upperR {
+   display: list-item;
+   list-style-type: upper-latin; 
+   margin: 20px;
+   list-style-position: inside;
+   text-align:left;
+}
+
+.upperR::marker{
+   color: red;
+}
+
+.red {
+   color: red;
+   font-weight: 900;
+}
+
+main li{
    display: inline-block;
-   width: 70%;
+   width: 80vw;
+   color: black;
+   list-style-type: circle;
+   list-style-position: inside;
 }
 
-li:hover::marker{
-   color: transparent;
+main li a{
+   display: inline-block;
+   width: 100%;
+   padding-left: 6px;
+   padding-top: 10px;
 }
 
-#faq fieldset{
-   display: block;
-   width: 96%;
+footer{
+   filter: brightness(1);
+   text-align:center;
+   background-color: rgba(0, 0, 0, 0.02);
+   margin-top: 10px;
+   padding-top: 10px;
+   cursor: help;
+}
+
+table{
+   width: auto;
+   max-width: 80vw;
    margin: auto;
-   border: none;
-   outline: none;
+   background: transparent;
 }
 
-#faq fieldset summary::marker{
-   color: #232333;
+td{
+   height: auto;
+   padding: 2px;
+   padding-left: 4px;
+   padding-right: 4px;
+   margin: 0;
 }
 
-#faq fieldset summary{
+.active{
+   background-color: aliceblue;
+}
+
+#time{
+   text-shadow: 0px 2px 6px blue, -3px -3px 3px white;
+   color: black;
+   font-family: cursive;
+   padding: 10px;
+   display: block;
+   margin: 10px auto;
+   outline: 3px 3px 3px red inset;
+   background: linear-gradient(rgba(106, 90, 205, 0.9), rgba(106, 90, 205, 0.5), rgba(106, 90, 205, 0.1));
+   font-weight: 900;
+   filter: brightness(90%);
+   width: 80%;
+   text-align: center;
+   border-radius: 20px 20px 40px 40px;
+   box-shadow: 4px 4px 8px gray;
+}
+
+.table{
+   align-self: center;
+   width: 90%;
+   border: 8px inset gainsboro;
+   margin-bottom: 10px;
+   border-collapse: collapse;
+}
+
+.cell {
    padding: 4px;
-   border-radius: 0px 2px 0px 4px;
-   margin-bottom: 6px;
-   background-color: rgba(35, 35, 51, 0.04);
+   border: 2px solid rgba(128, 128, 128, 0.2);
+}
+
+.thead{
+   text-align: center;
+}
+
+details, summary{
+   padding: 4px;
+}
+
+p a{
+   text-decoration-color: rgba(0, 0, 0, 0.2);
+   text-decoration-line: underline;
 }
