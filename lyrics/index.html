@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <title>Lyricsz - Lyrics </title>
-        <link rel="stylesheet" href="./../styles.css" type="text/css" />
+        <link rel="stylesheet" href="css/index.css" type="text/css" />
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="author" content="PJ Dev">
         <meta name="keyword" content="Lyricsz, Lyrics, LyricsAz, Az Lyrics, Video Lyrics, Songs, Naija Lyrics">
@@ -46,7 +46,7 @@
                 <p>A Big Congrats to you! For you are here, "<strong>The Home Of Lyrics</strong>". The song lyrics provided are in both text and video lyrics format... </p>
                 <p>If you're an artist, then go to "<a href="#iamartist">Artist Page</a>. Trust me, you'll like our collaboration.</p>
                 <p>Without any further-ado, let's have some fun with song lyrics!!!</p>
-                <blockquote>
+                <blockquote id="quoteOfTheDay">
                     <dl>
                         <dt>Quote of the day</dt>
                         <dd>A song without lyrics is feelingless.</dd>
@@ -56,24 +56,35 @@
             <section id="artista_z">
                 <h2> Artist A - Z </h2>
                 <p>This is a lyrics page, hence, we've made navigating around as easy as possible. Below is the list of all the artist available on this site... 
-                If you want an artist song lyrics but it's not displayed here, you can visit our "<a href="./request">Request page</a>.</p>
+                If you want an artist song lyrics but it's not displayed here, you can visit our "<a href="./request">Request page</a>".</p>
                 <div id="ArtistsAZ">
                     <fieldset>
                         <legend>Artist A - Z</legend>
-                        <input list="artist">
+                        <input list="artist" id="artistInput">
                         <datalist id="artist">
                             
                         </datalist>
+                        <div>
+                            <ul id="artistOutput">
+
+                            </ul>
+                        </div>
                     </fieldset>
                 </div>
             </section>
             <section id="topforweek">
                 <h2> Top 10 Song Lyrics Of The Week </h2>
-                <p></p>
+                <p>Hi, Welcome to the "<strong>Top 10 Song Lyrics Of The Week</strong>". These song lyrics are most visited... And trending lyrics of the week. :D</p>
+                <div id="topWeek">
+                    
+                </div>
             </section>
             <section id="topformonth">
                 <h2> Top 10 Song Lyrics Of The Month </h2>
-                <p></p>
+                <p>Hi, Welcome to the "<strong>Top 10 Song Lyrics Of The Month</strong>". These song lyrics are most visited... And trending lyrics of the month. :D</p>
+                <div id="topMonth">
+                    
+                </div>
             </section>
             <section id="search">
                 <h2> Search For Lyrics </h2>
@@ -91,18 +102,18 @@
         <footer class="footer" id="footer">
             <nav class="menu bar">
                 <ul>
-                    <li><a href="./"> Home </a></li>
-                    <li class="active"><a href="./lyrics"> Lyrics </a></li>
-                    <li><a href="./games"> Games </a></li>
-                    <li><a href="./gamesstore"> Apps </a></li>
+                    <li><a href="./../"> Home </a></li>
+                    <li class="active"><a href="./"> Lyrics </a></li>
+                    <li><a href="./../gamesstore"> Games </a></li>
+                    <li><a href="./../gamesstore"> Apps </a></li>
                     <h3></h3>
-                    <li><a href="./tutorials"> Tutorials </a></li>
-                    <li><a href="./contact"> Contact </a></li>
-                    <li><a href="./about"> About </a></li>
-                    <li><a href="./subscribe"> Subscribe </a></li>
+                    <li><a href="./../tutorials"> Tutorials </a></li>
+                    <li><a href="./../contact"> Contact </a></li>
+                    <li><a href="./../about"> About </a></li>
+                    <li><a href="./../subscribe"> Subscribe </a></li>
                 </ul>
             </nav>
         </footer>
-        <script src="../app.js"></script>
+        <script src="./app.js"></script>
     </body>
 </html>

@@ -1,0 +1,20 @@
+@import url("./../../styles.css");
+
+#quoteOfTheDay, #ArtistsAZ{
+    width: 80vw;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px ridge rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    box-shadow: 0px 0px 4px black inset;
+}
+
+#artistInput{
+    width: 80%;
+    padding: 10px;
+    border-radius: 0 10px 0 10px;
+    margin: 20px;
+    text-align: left;
+}
