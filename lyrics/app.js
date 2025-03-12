@@ -327,7 +327,7 @@ function animate(){
                 const li = document.createElement("li");
                 li.style.textAlign = "left";
                 const a = document.createElement("a");
-                a.href = './'
+                a.href = './artists/' + artist.toLowerCase().replace(/[^a-zA-Z0-9]/g, "");
                 a.textContent = artist;
                 li.appendChild(a);
                 artistOutput.appendChild(li);

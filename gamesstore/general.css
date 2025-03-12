@@ -157,7 +157,7 @@ td{
 }
 
 #time{
-    text-shadow: 0px 2px 6px blue, -3px -3px 3px white;
+    text-shadow: 2px 2px 2px blue, -1px -1px 1px white;
     color: black;
     font-family: cursive;
     padding: 10px;
@@ -171,6 +171,8 @@ td{
     text-align: center;
     border-radius: 20px 20px 40px 40px;
     box-shadow: 4px 4px 8px gray;
+    letter-spacing: 3px;
+    word-spacing: 6px;
 }
 
 .table{
@@ -192,4 +194,18 @@ td{
 
 a{
     text-decoration: underline;
+    text-decoration-color: rgba(106, 90, 205, 0.1);
+}
+
+.deleted {
+    text-decoration: line-through;
+}
+
+#nameID {
+    text-shadow: 0px 0px 10px white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    border-bottom: 1px dotted gray;
+    border-top: 0.5px double gray;
+    background-color: rgba(0, 0, 0, 0.2);
 }
