@@ -21,11 +21,11 @@ class Games{
         div.innerHTML = "";
         div.style.background = "radial-gradient(white, silver)";
         const span = document.createElement("span");
-        const {name, author, description, src} = this.stArray[div.id];
+        const {name, author, description, src, url} = this.stArray[div.id];
         span.innerHTML = "Author: " + "<span class='red'>" + author + "</span>";
         span.style.fontSize = "16px";
         const span2 = document.createElement("span");
-        span2.innerHTML = "Description: " +  "<span class='red'>" + description + "</span>";
+        span2.innerHTML = "Description: " +  "<span class='red'>" + "<a href=\"" + url + "\">" + description + "</a></span>";
         span2.style.font = "10px monospace bold";
         [span, span2].forEach(span => span.setAttribute("style", "color: #010301; text-shadow: 0px 0px 1px wheat; display: block; " + 
                                                         "width: 100%; padding: 0 4px; text-align: left; font-size: 14px; margin: 2px;"))
@@ -44,7 +44,7 @@ class Games{
     }
     applyToDiv(name, author, description, src, div){
         new Promise(() => {
-            div.setAttribute("style", `background-image:  url("${src}"); overflow: hidden; background-size: 150px; position: relative; `+ `
+            div.setAttribute("style", `background-image:  url("${src}"); overflow: hidden; background-size: 150px 150px; position: relative; `+ `
                  transition: all 2s ease-in-out;`)
             const span = document.createElement("span");
             span.id = "nameID"

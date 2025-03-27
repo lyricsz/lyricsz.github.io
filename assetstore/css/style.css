@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "pixel";
+    src: url("./../../assets/fonts/Oleaguid.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "pixel", monospace;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+    font-size: x-large;
+}
+
+body {
+    background-color: #85acde;
+    color: black;
+}
+
+p {
+    text-indent: 32px;
+    text-align: justify;
+    padding: 8px;
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+    font-size: xx-large;
+    text-align: center;
+    padding: 8px;
+}
+
+header, main, footer {
+    margin-bottom: 10px;
+    border-top: 1px solid black;
+}
+
+h1 , h2{
+    background: linear-gradient(rgba(0, 0, 0, 0.144), rgba(255, 255, 255, 0.144), rgba(0, 0, 0, 0.144));
+    text-shadow: 1px 1px 8px rgb(255, 255, 202);
+    border-radius: 0 0 10px 10px;
+}
+
+h2, h3 {
+    margin-top: 20px;
+}
+
+ul, ol {
+    list-style-position: inside;
+    padding: 8px;
+    list-style-image: linear-gradient(45deg, brown,gray, brown);
+    text-shadow: 1px 1px 10px rgba(55, 80, 124, 0.226);
+}
+
+header ul {
+    list-style: none;
+    text-align: center;
+}
+
+header ul li {
+    display: inline-block;
+    width: 20%;
+    padding: .2em .6em;
+    border-top: 0.2px dotted black;
+    border-bottom: 0.3px solid blue;
+    background-color: #81b3f5AA;
+    border-radius: 4px;
+}
+
+#searchBox {
+    background-color: rgba(255, 255, 255, 0.308);
+    border-radius: 10px;
+    border-right: 2px dotted blue;
+    width: max-content;
+    padding: 10px;
+    margin: auto;
+}
+
+#searchBox #search, #searchBox #search:visited {
+    background-color: transparent;
+    background-color: silver;
+    border: none !important;
+    width: 65%;
+}
+
+#searchBox button {
+    padding: 2px 4px;
+    background: linear-gradient(45deg, brown, gray, brown);
+    color: white;
+    border-radius: 0 10px 4px 0;
+}
+
+a:visited, a, a:active {
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+#assets {
+    width: 100%;
+    text-align: center;
+    background-color: red;
+    justify-content: space-between;
+}
+
+#AssetCard{
+    display: inline-table;
+    padding: 20px;
+    background-color: thistle;
+    width: 200px;
+    height: 200px;
+    text-align: left;
+    margin: 20px;
+}
