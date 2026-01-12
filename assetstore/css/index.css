@@ -1,0 +1,281 @@
+@font-face {
+    font-family: Pixel;
+    src: url("./../assets/Kenney\ Mini.ttf");
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        width: 95vw !important;
+        margin: auto;
+    }
+
+    .frameContainer {
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    body {
+        width: 60vw !important;
+        margin: auto;
+    }
+
+    .frameContainer {
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Pixel;
+}
+
+html {
+    background-image: url("./../icon.ico");
+    background-repeat: repeat;
+    background-size: contain;   
+}
+
+h1, h2 {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2.5rem;
+    color: green;
+}
+
+h1 img {
+    vertical-align: auto;
+    border-radius: 20%;
+    height: 100%;
+    width: max-content;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+}
+
+header nav li {
+    color: white;
+    display: inline-block;
+    width: max-content;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20%;
+}
+
+header nav ul {
+    text-align: center;
+}
+
+header {
+    padding-bottom: 20px;
+    border-bottom: 1px ridge gray;
+}
+
+#searchBar {
+    width: 80%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+#searchBar input[type="search"]{
+    width: 100%;
+    height: 2rem;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#searchBar input[type="submit"]{
+    padding: 4px;
+    font-weight: 800;
+    font-size: 1rem;
+    margin-top: .4rem;
+    background-color: rgb(54, 51, 51);
+    border-radius: 6px;
+}
+
+p, fieldset {
+    margin: 10px;
+}
+
+fieldset {
+    background-color: rgba(128, 128, 128, 0.635);
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+fieldset legend {
+    font-size: larger;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-decoration-color: green;
+    text-decoration-thickness: 4px;
+    padding: 10px;
+}
+
+fieldset p {
+    padding: 0px;
+    padding-left: 20px;
+}
+
+fieldset ul, fieldset ol {
+    padding-left: 30px;
+    list-style-position: inside;
+}
+
+fieldset li::marker {
+    color: red;
+    background-image: url("./../icon.ico");
+}
+
+p, ul, ol, fieldset, input[type="submit"] {
+    color: white;
+}
+
+details summary {
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin-top: 10px
+}
+
+a {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+main nav ul {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    width: 18%;
+    text-align: center;
+    border-radius: 10px;
+    border-bottom: 2px ridge black;
+}
+
+.frameContainer {
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 10px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.frame {
+    min-width: 200px;
+    max-width: 300px;
+    margin-top: 20px;
+    display: grid;
+    place-items: center;
+}
+
+.frame img {
+    width: 100%;
+    border-radius: 10px;
+    border-bottom: 2px inset gold;
+    box-shadow: 0px 2px 4px gold;
+    aspect-ratio: 16/9;
+    background-color: gray;
+}
+
+.frameTitle {
+    filter: brightness(1.5);
+    text-align: center;
+    text-shadow: 0px 0px 2px white, -1px 1px 10px rgb(4, 38, 255);
+    letter-spacing: 3px;
+}
+
+.price, .description {
+    font-size: larger;
+    text-shadow: 0px 1px .5px rgb(120, 120, 120);
+}
+
+.priceDes {
+    color: wheat;
+}
+
+.frame:hover {
+    background-color: rgba(100, 96, 128, 0.4);
+}
+
+#refreshColors {
+    position: fixed;
+    left: 10px;
+    width: 100px;
+    bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 4px inset gray;
+}
+
+#refreshColors:hover, #refreshColors:active {
+    border-bottom: 2px inset gray;
+}
+
+.frame a {
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border-radius: 10px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.frame a button {
+    cursor: pointer;
+    
+}
+
+#siteList {
+    display: block;
+    width: 80%;
+}
+
+#siteList li {
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(224, 221, 221, 0.521);
+    border-radius: 0 25px 0 25px;
+    border: 4px groove rgb(193, 218, 193);
+}
+
+footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+footer li {
+    display: inline-block;
+    color: #ffefef;
+    padding: 10px;
+    margin: 10px;
+}

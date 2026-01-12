@@ -6,11 +6,24 @@
    padding: 0;
 }
 
+@media screen and (min-width: 800px) {
+   body {
+      width: 70%;
+      margin: auto;
+   }
+
+   .listTemp section {
+      grid-template-columns: repeat(4, 1fr) !important;
+   }
+}
+
 body {
    font-family: "Comic Sans MS", sans-serif;
-   background-color: rgba(238, 238, 238, 0.5);
+   background-color: rgba(204, 196, 196, 0.5);
    overflow-x: hidden;
    overflow-y: visible;
+   background-image: url("/assets/background-tile.png");
+   background-size: 500px;
 }
 
 ul, ol{
@@ -193,4 +206,198 @@ p a{
 
 fieldset{
    border: none;
+}
+
+#logo {
+   max-width: 300px;
+   width: 30%;
+   height: 30%;
+   display: block;
+   margin: auto;
+}
+
+.parent-glink {
+   overflow: none;
+   background-color: rgb(0, 0, 0, 0);
+   display: flow-root;
+}
+
+.container {
+   overflow: hidden;
+   height: 2.7em;
+   background-color: rgba(92, 0, 0, 0.216);
+   border-radius: 10px 30px 10px 0;
+   width: 50%;
+}
+
+.parent-glink .first-child{
+   width: 100%;
+   display: block;
+   background-color: rgba(73, 1, 1, 0.908);
+   border-radius: 10px 30px 10px 0;
+   color: white;
+}
+
+.parent-glink .first-child::after {
+   content: " >>> ";
+   display: inline;
+}
+
+.parent-glink:hover .first-child::after {
+   content: " <<< ";
+}
+
+.container:hover {
+   height: 15em;
+}
+
+
+#latest-release #latest-release-icon {
+   aspect-ratio: 16/9;
+   width: 90%;
+   margin: auto;
+   border: 2px solid gray;
+}
+
+#latest-release {
+   margin: auto;
+   display: block;
+   background-color: none;
+   width: 60%;
+   border-radius: 10px;
+   position: relative;
+}
+
+#latest-release legend {
+   position: absolute;
+   bottom: 0.2em;
+   background-color: rgba(0, 0, 0, 0.483);
+   color: white;
+   padding: 4px;
+   border-radius: 10px;
+}
+
+#ad {
+   background-color: rgba(255, 0, 0, 0.04);
+   border-radius: 30px 60px;
+   width: 75%;
+   text-align: center;
+   padding: 20px;
+   margin: 20px auto;
+}
+
+#ad p {
+   color: rgb(255, 255, 255);
+   text-shadow: 0px 0px 1px royalblue;
+}
+
+#ad button {
+   padding: 10px 20px;
+   color: red;
+   font-weight: 700;
+   letter-spacing: .3em;
+   border-radius: 10px;
+   border: none;
+}
+
+#ad button:hover {
+   box-shadow: 0px 0px 3px gray;
+}
+
+.listTemp section {
+   display: grid;
+   width: 80%;
+   margin: auto;
+   grid-template-columns: repeat(2, 1fr);
+   justify-items: stretch;
+   align-items: stretch;
+   text-align: center;
+}
+
+.listTemp section a {
+   display: inline;
+}
+
+.courseCParent {
+   display: inline-block;
+   width: 96%;
+   height: 99%;
+   background-color: red;
+   border: 4px solid black;
+   border-radius: 20px 0 10px;
+   overflow: hidden;
+   padding-bottom: 20px;
+}
+
+.courseCParent:hover {
+   border: 4px dotted gray;
+}
+
+.courseCParent img {
+   aspect-ratio: 16/9;
+   width: 100%;
+}
+
+.courseCParent h4 {
+   color: white;
+   letter-spacing: 0.1em;
+   text-shadow: 0px 2px 2px black;
+   font-weight: 500;
+}
+
+.sort {
+   width: 60%;
+   margin: auto;
+}
+
+.sort div {
+   background-color: rgba(165, 42, 42, 0.2);
+   border-radius: 20px;
+   padding: 10px;
+   margin-bottom: 20px;
+   color: whitesmoke;
+   text-shadow: 0 1px 1px black;
+}
+
+.sort label {
+   padding-left: 6%;
+   font-size: large;
+   display: inline-block;
+   width: 60%;
+}
+
+.sort label input {
+   margin-right: 6px !important;
+}
+
+dl {
+   display: block;
+   background-color: rgba(255, 0, 0, 0.118);
+   width: 80%;
+   text-align: center;
+   margin: 10px auto;
+   border-radius: 30px 0;
+}
+
+dl dt {
+   font-weight: 800;
+}
+
+.center {
+   text-align: center;
+}
+
+#inDevelopment {
+   display: none;
+   background-color: rgba(0, 0, 0, 0.95);
+   position: fixed;
+   color: white;
+   padding: 20px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+#inDevelopment p {
+   color: white;
 }

@@ -3,86 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lyricsz Games - Asset Store</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name="description" content="A home of Lyricsz Assets. Whether its 2d, 3d, sounds or any assets, Lyricsz has got you covered.">
+    <meta name="keyword" content="Lyricsz Assets, Lyricsz, Assets Store for Games, Games Assets, Lyricsz Assets Store"> 
+    <title>Lyricsz Assets Store</title>
+    <link rel="icon" href="./icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
-        <h1>Asset Store</h1>
+        <h1><img src="./icon.ico" alt="Lyricsz Logo."> Lyricsz Assets Store</h1>
         <nav>
             <ul>
-                <li><a href="./">  Home </a></li>
-                <li><a href="./assets"> Assets </a></li>
-                <li><a href="#about"> About </a></li>
-                <li><a href="./subscribe"> Subscribe </a></li>
+                <a href="./"> <li>Home</li></a>
+                <a href="https://lyricsz-assets.itch.io"> <li>Assets</li></a>
+                <a href="https://lyricsz.itch.io"><li>Games</li></a>
+                <li>Contact</li>
             </ul>
         </nav>
     </header>
     <main>
+        <div id="searchBar">
+            <form>
+                <input type="search" placeholder="Enter a query"/>
+                <input type="submit" />
+            </form>
+        </div>
+        <p>To visit Lyricsz, <a href="./../">click here</a></p>
+        <p>The assets are listed below. Feel free to pick any of them or use the search button to search for assets or related assets available. </p>
+        <fieldset>
+            <legend>Note</legend>
+            <p>All assets licenses should be respected and violating these law might result into consequences. Please make sure you understand the license of the each assets. If you download our assets from our 
+            <ul>
+                <li><a href="https://www.artstation.com/lyricsz"> Artstation page, </a></li>
+                <li><a href="https://lyricsz-assets.itch.io/"> Itch io page, </a></li> 
+                <li><a href="https://opengameart.org/users/lyricsz"> OpenGameArt page, </a></li>
+                <li><a href="https://cults3d.com/en/users/lyricsz"> Cults3d Page </a></li>
+                <li>and others. (For the exhaustive list of where you can get our assets, <a href="./page.html">Click here</a>)</li>
+            </ul>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Latest news</legend>
+            <details>
+                <summary>New Game Development Course</summary>
+                <p>We're so glad to inform you of our new game development course! This course is ideal for beginners and intermediate game developers but if you're an expert... It might be a great way to get into Godot engine. </p>
+                <p>This is a 10 day tutorial and the tutorial is open-sourced... Meaning anyone can contribute to this project. If you're Godot-Competent, we urge you to contribue. </p>
+                <p>To get started, join the <a href="">official whatsapp group for everyday lesson</a></p>
+            </details>
+            <details>
+                <summary>New Youtube Channel</summary>
+                <p>Hello. We're so happy to announce that we now have a Youtube Channel for learning Web Development and it's Festy Pesty and another Youtube Channel for Learning Game Development in General. </p>
+            </details>
+            <details>
+                <summary>Ways to Support</summary>
+                <p>Hi. We're very glad to make the announcement that you can now support us by either joining our Patreon page (With lots of features unlocked for you and me), Buy-Us-A-Coffee (With bonus and offers, with a generous way of supporting us), or buying any of our assets or games (Thanks a lot for that). </p>
+            </details>
+        </fieldset>
         <nav>
             <ul>
-                <li><a href="#introduction"> Introduction </a></li>
-                <li><a href="#assetstore"> Asset Store </a></li>
-                <li><a href="#topweek"> Top Assets this Week </a></li>
-                <li><a href="#topmonth"> Top Assets this Month </a></li>
-                <li><a href="#disclaimer"> Copyright Disclaimer </a></li>
-                <li><a href="#about"> About </a></li>
+                <li>2D</li>
+                <li>3D</li>
+                <li>Audio</li>
+                <li>2D & 3D</li>
+                <li>All</li>
             </ul>
         </nav>
-        <aside>
-            <p>For a quick assets search: </p>
-            <form id="searchBox" method="post">
-                <input type="search" id="search" placeholder="dungeon" autofocus> 
-                <button type="submit">Search</button>
-            </form>
-        </aside>
-        <section id="introduction">
-            <h2 title="Introduces the Asset store">Introduction</h2>
-            <p>Hello World! And welcome to Lyricsz Asset Store! Here you can find all sort of asset store including 2D, 3D, SFX, Music and Fonts for games, Addons specific to a game engine and lot more! The site has a lot to offer and we'll keep the text/words as short as possible since we're here to download assets or look for one. </p>
-            <p>As with all Lyricsz site, here are what we're hoping to add in the future:</p>
-            <ol>
-                <li>A Pixel Art Maker web app / for specific platforms e.g Windows</li>
-                <li>An app to visit this site while incorporating all its feature along with extra features</li>
-                <li>A General Image Editor </li>
-            </ol>
-        </section>
-        <section id="assetstore">
-            <h2 title="A large comprehensive assets for games">Asset Store</h2>
-            <p>Enjoy!</p>
-            <form id="searchBox" method="post">
-                <input type="search" id="search" placeholder="dungeon" autofocus> 
-                <button type="submit">Search</button>
-            </form>
-            <div id="assets">
-
-
+        <section class="frameContainer">
+            <div class="frame" id="firstFrame">
+                <h2 class="frameTitle">3D Fan 1</h2>
+                <img src="./assets/fan1.png">
+                <div class="description">A simple model of a 3D fan.</div>
+                <div class="price">Price: <span class="priceDes">Free!</span></div>
+                <a href="https://lyricsz-assets.itch.io/3d-fan-1"><button>Get Now!!!</button></a>
             </div>
-        </section>
-        <section id="topweek">
-            <h2 title="List of top Assets this Week">Top Assets this Week</h2>
-            <p>An organised list of top 20 list of top assets this week!</p>
-            <div id="assetByWeek">
-
+            <div class="frame">
+                <h2 class="frameTitle">3D Fan 2</h2>
+                <img src="./assets/fan2.png">
+                <div class="description">A simple model of a 3D fan (Version 2)</div>
+                <div class="price">Price: <span class="priceDes">$3!</span></div>
+                <a href="https://lyricsz-assets.itch.io/3d-fan-2"><button>Get Now!!!</button></a>
             </div>
-        </section>
-        <section id="topmonth">
-            <h2 title="List of top Assets this Month">Top Assets this Month</h2>
-            <p>An organised list of top 20 list of top assets this month!</p>
-            <div id="assetByMonth">
-
+            <div class="frame">
+                <h2 class="frameTitle">50 Bottles</h2>
+                <img src="./assets/50bottles.png">
+                <div class="description">Models of 50 Bottles!</div>
+                <div class="price">Price: <span class="priceDes">Free!</span></div>
+                <a href="https://lyricsz-assets.itch.io/50-bottles-3d"><button>Get Now!!!</button></a>
             </div>
+            <div class="frame">
+                <h2 class="frameTitle">Blocky Characters</h2>
+                <img src="./assets/blockyBundle.png">
+                <div class="description">A simple model of 11 blocky and stylized characters.</div>
+                <div class="price">Price: <span class="priceDes">Free!</span></div>
+                <a href="https://www.gamedevmarket.net/asset/character-bundles-10x"><button>Get Now!!!</button></a>
+            </div>
+            <div class="frame">
+                <h2 class="frameTitle">20 Cups, 4 Chairs and a Toilet</h2>
+                <img src="./assets/fan1.png">
+                <div class="description">A simple model of 20 cups, 4 chairs and a toilet.</div>
+                <div class="price">Price: <span class="priceDes">Free!</span></div>
+                <a href="https://www.gamedevmarket.net/asset/4-chairs-20-cups-and-a-toilet"><button>Get Now!!!</button></a>
+            </div>
+            <!-- Fix in the future! -->
+            <div class="frame">
+                <h2 class="frameTitle">Dressing Mirror</h2>
+                <img src="./assets/dressingmirror.png">
+                <div class="description">A simple model of a dressing mirror.</div>
+                <div class="price">Price: <span class="priceDes">Free!</span></div>
+                <a href=""><button>Get Now!!!</button></a>
+            </div>
+            <div class="frame">
+                <h2 class="frameTitle">Heart 2</h2>
+                <img src="./assets/heart2.png">
+                <div class="description">A simple model of a heart (Version 2).</div>
+                <div class="price">Price: <span class="priceDes">Free!</span></div>
+                <a href=""><button>Get Now!!!</button></a>
+            </div>
+            <div class="frame">
+                <h2 class="frameTitle">Heart</h2>
+                <img src="./assets/heart2.png">
+                <div class="description">A simple model of a heart.</div>
+                <div class="price">Price: <span class="priceDes">Free!</span></div>
+                <a href=""><button>Get Now!!!</button></a>
+            </div>
+            <div class="frame">
+                <h2 class="frameTitle">20 gas</h2>
+                <img src="./assets/20gas.png">
+                <div class="description">Models of 20 gas!</div>
+                <div class="price">Price: <span class="priceDes">Free!</span></div>
+                <a href="https://opengameart.org/content/20-gases"><button>Get Now!!!</button></a>
+            </div>
+            <div class="frame">
+                <h2 class="frameTitle">ManTime</h2>
+                <img src="./assets/20gas.png">
+                <div class="description">A simple model of a character (ManTime)</div>
+                <div class="price">Price: <span class="priceDes">Free!</span></div>
+                <a href=""><button>Get Now!!!</button></a>
+            </div>
+            <div class="frame">
+                <h2 class="frameTitle">Chess (2d)</h2>
+                <img src="./assets/chess2d.png">
+                <div class="description">Pixel art pack of chess sets.</div>
+                <div class="price">Price: <span class="priceDes">Free!</span></div>
+                <a href="https://opengameart.org/content/2d-chess"><button>Get Now!!!</button></a>
+            </div>
+            <div class="frame">
+                <h2 class="frameTitle">25 Pixel Art Character</h2>
+                <img src="./assets/characters25.png">
+                <div class="description">Pixel art pack of 25 Characters!</div>
+                <div class="price">Price: <span class="priceDes">Free!</span></div>
+                <a href="https://opengameart.org/content/pixel-art-characters-25x"><button>Get Now!!!</button></a>
+            </div>
+            <div class="frame">
+                <h2 class="frameTitle">Ludo (3d)</h2>
+                <img src="./assets/ludo3d.png">
+                <div class="description">A simple model for ludo game.</div>
+                <div class="price">Price: <span class="priceDes">Free!</span></div>
+                <a href="https://opengameart.org/content/ludo-0"><button>Get Now!!!</button></a>
+            </div>
+            <div class="frame">
+                <h2 class="frameTitle">25 Donuts</h2>
+                <img src="./assets/donut25.png">
+                <div class="description">Pixel art pack of 25 donuts.</div>
+                <div class="price">Price: <span class="priceDes">Free!</span></div>
+                <a href="https://opengameart.org/content/donuts-20x"><button>Get Now!!!</button></a>
+            </div>
+            <div class="frame">
+                <h2 class="frameTitle">Chess 3D</h2>
+                <img src="./assets/chess3d.png">
+                <div class="description">A 3d Model pack of chess! Note, there's a <a href="https://opengameart.org/content/rough-chess-piece"> free version! </a></div>
+                <div class="price">Price: <span class="priceDes">$3/Free version!</span></div>
+                <a href="https://lyricsz-assets.itch.io/chess-set-3d"><button>Get Now!!!</button></a>
+            </div>
+            <div class="frame">
+                <h2 class="frameTitle">10 Barrels</h2>
+                <img src="./assets/barrelpreview.png">
+                <div class="description">A 3d Model pack of 10 Barrels!</div>
+                <div class="price">Price: <span class="priceDes">Free!</span></div>
+                <a href="https://opengameart.org/content/barrels-3"><button>Get Now!!!</button></a>
+            </div>
+            <div class="frame">
+                <h2 class="frameTitle">Short Platformer Assets Pack 1</h2>
+                <img src="./assets/chess3d.png">
+                <div class="description">A pixel art assets pack for a platformer game (The Last Of Us)!</div>
+                <div class="price">Price: <span class="priceDes">Free!</span></div>
+                <a href="https://lyricsz-assets.itch.io/short-platformer-asset-pack-simple-asset-pack"><button>Get Now!!!</button></a>
+            </div>
+            <div class="frame">
+                <h2 class="frameTitle">Short Platformer Assets Pack 2</h2>
+                <img src="./assets/chess3d.png">
+                <div class="description">A pixel art assets pack for a platformer game (Reality Checkmate)</div>
+                <div class="price">Price: <span class="priceDes">Free!</span></div>
+                <a href=""><button>Get Now!!!</button></a>
+            </div>
+            
         </section>
-        <section id="disclaimer">
-            <h2 title="Copyright and Disclaimer notice">Copyright Disclaimer</h2>
-            <p></p>
-        </section>
-        <section id="about">
-            <h2 title="About Lyricsz Asset Store">About</h2>
-        </section>
+        <button id="refreshColors">Refresh Colors!</button>
     </main>
     <footer>
-
+        <nav>
+            <ul>
+                <a href="./"> <li>Home</li></a>
+                <a href="https://lyricsz-assets.itch.io"> <li>Assets</li></a>
+                <a href="https://lyricsz.itch.io"><li>Games</li></a>
+                <li>Contact</li>
+            </ul>
+        </nav>
     </footer>
-    <script src="./scripts/index.js"></script>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
